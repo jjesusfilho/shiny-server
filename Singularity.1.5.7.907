@@ -6,11 +6,14 @@ Maintainer Matthew Flister
 Version 07.23.18
 
 %help
-This container runs Shiny Server.
+This container runs apps in Shiny Server.
 
 %post
     # default mount points
     mkdir -p /scratch/global /scratch/local /rcc/stor1/refdata /rcc/stor1/projects /rcc/stor1/depts
+
+    # install gdebi
+    apt-get update && apt-get install -y gdebi-core && apt-get clean
 
     # install R shiny package
     R -e "install.packages('shiny', repos='https://cran.rstudio.com/')"
