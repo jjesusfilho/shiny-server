@@ -9,5 +9,6 @@ Singularity container for Shiny Server.
 Run a Shiny app:
 ```
 $ singularity pull --name shiny.simg shub://mcw-rcc/shiny-server:1.5.9.923
-$ singularity exec shiny.simg Rscript app.R
+$ singularity run shiny.simg app.R
 ```
+The run command will display a URL. Open a browser and enter the URL to interact with the app.
