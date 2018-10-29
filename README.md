@@ -8,6 +8,6 @@ Singularity container for Shiny Server.
 
 Run a Shiny app:
 ```
-$ singularity pull --name shiny.simg shub://mcw-rcc:shiny-server:1.5.9.923
+$ singularity pull --name shiny.simg shub://mcw-rcc/shiny-server:1.5.9.923
 $ singularity exec shiny.simg Rscript app.R
 ```
